@@ -1,0 +1,123 @@
+@font-face /* Fuente Titulos */ {
+  font-family: "Boheme Floral";
+  src: url("../fonts/boheme_floral/Boheme Floral.ttf");
+}
+
+.fuenteTitulo {
+  font-family: "Boheme Floral";
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 2rem;
+      grid-template-areas: "header header header header header header" "aside main main main main main" ". main main main main main" "footer footer footer footer footer footer";
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 2rem;
+  max-width: 100%;
+  height: 100vh;
+  margin: 2rem auto;
+  background-image: url(../img/logosBVN/Rosa1_Grey.svg);
+  background-size: 68rem;
+  background-position: right -20rem bottom -62rem;
+  background-repeat: no-repeat;
+}
+
+body header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: header;
+  justify-items: center;
+}
+
+body header hr {
+  border: 0;
+  height: 2px;
+  width: 35rem;
+  background: #333;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ccc), color-stop(#333), to(#ccc));
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+body nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: aside;
+  padding: 2rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.75);
+  list-style: none;
+}
+
+body nav ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+body nav li {
+  padding: 0.40rem;
+}
+
+body nav li a {
+  color: #878787;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  font-size: 20px;
+}
+
+body nav li a:hover {
+  color: black;
+  -webkit-transform: rotate(5deg) scale(1.1);
+          transform: rotate(5deg) scale(1.1);
+}
+
+body main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body main #contenedorImgCV {
+  width: 100%;
+  height: 100%;
+}
+
+body main #contenedorImgCV embed {
+  width: 100%;
+  height: 100vh;
+}
+
+body footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: footer;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+}
+/*# sourceMappingURL=MiCV_portfolio copy.css.map */

@@ -1,0 +1,51 @@
+@import "base_portfolio.scss";
+
+body{
+    main{
+        grid-area: main;
+        flex-wrap: wrap;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "contenedorTextoAcercaDe contenedorTextoAcercaDe contenedorLogos contenedorLogos contenedorLogos";
+        
+        #textoAcercaDe{
+            grid-area: contenedorTextoAcercaDe;
+            justify-items: center;
+            width: 30rem;
+            ul{
+                list-style: none;
+                padding: 0.60rem;
+
+                li{
+                    list-style: none;
+                    padding: 0.20rem;
+                }
+            }
+            
+        }
+
+        #contenedorPrototipo{
+            width: 40rem;
+            height: 100vh;
+
+            embed{
+                width: 100%;
+                height: 100vh;
+            }
+        }
+    }  
+}
+
+@media (min-width: 320px) and (max-width: 1024px){
+    body{
+        main{
+            #textoAcercaDe{
+                width: auto;
+            }
+            #contenedorPrototipo{
+                width: auto;
+            }
+        }
+    } 
+}

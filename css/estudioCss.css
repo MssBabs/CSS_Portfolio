@@ -1,0 +1,344 @@
+@charset "UTF-8";
+body {
+  gap: 2rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 6rem auto;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+
+body main #contenedorRoundedCorners {
+  background-color: #7303c0;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 14rem;
+}
+
+body main #contenedorRoundedCorners #BordesRoundedCorners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+
+body main #contenedorRoundedCorners #BordesRoundedCorners1 {
+  border-radius: 1rem 3rem;
+  border: 0.2rem solid #03001e;
+  background-color: #fdeff9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 6rem;
+  height: 6rem;
+}
+
+body main #contenedorRoundedCorners #BordesRoundedCorners2 {
+  border-radius: 3rem 1rem;
+  border: 0.2rem solid #03001e;
+  background-color: #fdeff9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 6rem;
+  height: 6rem;
+}
+
+body main #contenedorBorderImages {
+  border: 2rem solid transparent;
+  padding: 1rem;
+  -o-border-image: url(../img/borderImage.png) 50 stretch;
+     border-image: url(../img/borderImage.png) 50 stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+body main #contenedorBackgrounds {
+  background-image: url(../img/boca-background.png), url(../img/vibrant-neon-colorful-liquid-background.jpg);
+  background-position: center bottom, left top;
+  background-repeat: no-repeat, repeat;
+  border-radius: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: rigth;
+      -ms-flex-align: rigth;
+          align-items: rigth;
+  text-align: center;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #fdeff9;
+  width: 90%;
+  height: 27rem;
+}
+
+body main #contenedorBackgrounds h2 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body main #contenedorGradients {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#03001e), color-stop(#7303c0), color-stop(#ec38bc), to(#fdeff9));
+  background-image: linear-gradient(#03001e, #7303c0, #ec38bc, #fdeff9);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+body main #contenedorShadows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0 0 .5rem #7303c0, 0 0 1rem #ec38bc;
+          box-shadow: 0 0 .5rem #7303c0, 0 0 1rem #ec38bc;
+  border-radius: 4rem;
+  width: 20%;
+}
+
+body main #contenedorShadows h2 {
+  text-shadow: 0 0 .5rem #7303c0, 0 0 1rem #ec38bc;
+}
+
+body main #contenedorTextEffects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  /*vanishIn;*/
+  background-color: #03001e;
+  color: #fdeff9;
+  -webkit-box-shadow: 0 0 .5rem #ec38bc;
+          box-shadow: 0 0 .5rem #ec38bc;
+  border-radius: 1rem;
+  width: 10%;
+  height: 10rem;
+}
+
+body main #contenedorTextEffects h2 {
+  text-align: center;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  /*1º Posicionar texto de forma vertical*/
+  font-size: 1.8rem;
+  margin: 0;
+  /*2º Unir palabras*/
+  line-height: 1.6rem;
+  /*3º Crear distancia entre medias-> +alto == +separacion*/
+}
+
+body main #contenedorTextEffects #RotateTextEffects {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  /*Rotamos Texto para crear agrupacion de lectura-> ()*/
+}
+
+body main #contenedor2DTransforms {
+  width: 90%;
+  height: 14rem;
+}
+
+body main #contenedor2DTransforms #contenedorimg2DTransforms img:hover {
+  -webkit-transform: rotateZ(60deg);
+          transform: rotateZ(60deg);
+}
+
+body main #contenedor2DTransforms #contenedorimg2DTransforms {
+  max-width: 20rem;
+}
+
+body main #contenedor2DTransforms #contenedorimg2DTransforms #img2DTransforms {
+  max-width: 100%;
+}
+
+body main #contenedor3DTransforms {
+  width: 90%;
+  height: 14rem;
+}
+
+body main #contenedor3DTransforms #contenedorimg3DTransforms:hover {
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+body main #contenedor3DTransforms #contenedorimg3DTransforms {
+  max-width: 15rem;
+}
+
+body main #contenedor3DTransforms #contenedorimg3DTransforms #img3DTransforms {
+  max-width: 100%;
+}
+
+body main #contenedorTransitions #contenedorimg:hover {
+  width: 30rem;
+}
+
+body main #contenedorTransitions #contenedorimg {
+  width: 15rem;
+  -webkit-transition: width 2s, height 4s;
+  transition: width 2s, height 4s;
+}
+
+body main #contenedorTransitions #contenedorimg #img {
+  width: 100%;
+}
+
+body main #contenedorAnimations #contenedorimg:hover {
+  width: 30rem;
+}
+
+body main #contenedorAnimations #contenedorimg {
+  width: 15rem;
+  position: relative;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+body main #contenedorAnimations #contenedorimg #img {
+  width: 100%;
+}
+/*# sourceMappingURL=estudioCss.css.map */

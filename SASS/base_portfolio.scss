@@ -1,0 +1,217 @@
+/* Fuente Titulos */ 
+@font-face{
+    font-family: "Boheme Floral";
+    src: url("../fonts/boheme_floral/Boheme Floral.ttf");
+}
+.fuenteTitulo{
+    font-family: "Boheme Floral";
+    font-size: 4.2rem;
+    text-align: center;
+}
+
+@font-face{
+    font-family: "Calibri Bold";
+    src: url("../fonts/calibri-font-sv/Calibri Bold/Calibri Bold.TTF");
+}
+.fuenteSubTitulos{
+    font-family: "Calibri Bold";
+}
+
+@font-face{
+    font-family: "Calibri Regular";
+    src: url("../fonts/calibri-font-sv/Calibri Regular/Calibri Regular.ttf");
+}
+
+
+
+
+@mixin Style_HR{
+    border: 0;
+    height: 2px;
+    width: 35rem;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+@mixin Style_Nav{
+    padding: 2rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.75);
+
+    list-style: none;
+    ul {
+        list-style-type: none;
+        margin-left: -40px;
+    }
+    li{ 
+        padding: 0.40rem;
+
+        a {
+            color: #878787;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+            font-size: 20px;
+            }
+        a:hover {
+            color: black;
+            transform: rotate(5deg) scale(1.1);
+        }
+    }
+} 
+
+@mixin Style_Footer{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-self: flex-end;
+
+    width: 100%;
+    height: 1.5rem;
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+
+body{
+    font-family: "Calibri Regular";
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas: "header header header header header header"
+                         "aside main main main main main"
+                         ". main main main main main"
+                         "footer footer footer footer footer footer";
+
+    max-width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    /* Fondo */ 
+    background-image: url(../img/logosBVN/Rosa1_Grey.svg);
+    background-size: max($numbers: 60rem);
+    background-position: right -3rem bottom -15rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    header{
+        grid-area: header;
+        justify-items: center;
+
+        hr{
+            @include Style_HR;
+        }
+    }
+
+    nav{
+        grid-area: aside;
+        @include Style_Nav;
+    }
+
+    main{
+        grid-area: main;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        #contenedorImgCV{
+            width: 100%;
+            height: 100%;
+            embed{
+                width: 100%;
+                height: 100vh;  
+            }
+        }
+    }
+
+    footer{
+        grid-area: footer;
+        @include Style_Footer;
+
+        #contenedorSocial{
+            margin-left: 2rem;
+            display: flex;
+
+            #contenedorLogoLinkedin, #contenedorLogoGmail{
+                margin:2px;
+                a{
+                    i{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*Formato Tablet*/
+@media (min-width: 768px) and (max-width: 1024px){
+    body{
+        grid-template-areas: "header header header header header header"
+                             "aside main main main main main"
+                             ". main main main main main"
+                             "footer footer footer footer footer footer";
+        
+        nav{
+            padding:0;
+        }
+
+        header{
+            width: 100%;
+                 
+            hr{
+                margin-bottom: 1rem;
+                width: 20rem;
+            }
+        }
+    } 
+}
+
+/*Formato Movil*/
+@media (min-width: 320px) and (max-width: 767px){
+    body{
+        grid-template-areas: "header header header header header header"
+                             "aside aside aside aside aside aside"
+                             "main main main main main main"
+                             "footer footer footer footer footer footer";
+
+        nav{
+            border-right: none;
+            padding:0;
+
+            ul{
+                margin: 0;
+                width: 100%;
+                padding:0;
+                text-align: center;
+                li{
+                 display:inline-flex;   
+                }
+            }
+        }
+
+       main{
+            padding: 2rem;
+       }
+
+       header{
+           width: 100%;
+
+           hr{
+               margin-bottom: 1rem;
+                width: 15rem;
+            }
+        }
+    } 
+}
